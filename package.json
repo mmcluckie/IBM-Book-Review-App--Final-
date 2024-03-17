@@ -1,0 +1,17 @@
+{
+  "name": "ibm-book-review-app",
+  "version": "1.0.0",
+  "description": "Final Project IBM",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "nodemon": "^3.0.3"
+  }
+}
