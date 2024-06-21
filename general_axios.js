@@ -37,7 +37,7 @@ public_users.get('/isbn/:isbn', async (req, res) => {
   const isbn = req.params.isbn;
   try {
     const response = await axios.get(
-      `afiqrazak380-5000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/books/isbn/${isbn}`
+      `mmcluckie.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/books/isbn/${isbn}`
     );
     return res.status(200).json(response.data);
   } catch (error) {
@@ -53,7 +53,7 @@ public_users.get('/author/:author', async (req, res) => {
   const author = req.params.author;
   try {
     const response = await axios.get(
-      `http://afiqrazak380-5000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/books/author/${author}`
+      `http://mmcluckie-5000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/books/author/${author}`
     );
     return res.status(200).json(response.data);
   } catch (error) {
@@ -71,7 +71,7 @@ public_users.get('/title/:title', async (req, res) => {
   const title = req.params.title;
   try {
     const response = await axios.get(
-      `http://afiqrazak380-5000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/books/title/${title}`
+      `http://mmcluckie-5000.theiadockernext-1-labs-prod-theiak8s-4-tor01.proxy.cognitiveclass.ai/books/title/${title}`
     );
     return res.status(200).json(response.data);
   } catch (error) {
